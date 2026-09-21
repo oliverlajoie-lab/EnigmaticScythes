@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOU",
+    " O ",
+    "O  "
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "U": {
+      "item": "enigmatic_scythes:unstable_gem"
+    }
+  },
+  "result": {
+    "item": "enigmatic_scythes:scythe_of_curse",
+    "count": 1
+  }
+}
