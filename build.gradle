@@ -75,6 +75,9 @@ minecraft {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
 
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -121,6 +124,16 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+
+    maven { url 'https://repo.spongepowered.org/repository/maven-public/' }
+    maven { url 'https://maven.bawnundies.com/releases' }
 }
 
 dependencies {
@@ -146,6 +159,10 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+    implementation fg.deobf("curse.maven:eniglegacy-336184:5600004")
+    implementation fg.deobf('curse.maven:curiosapi-309927:6418456')
+    implementation fg.deobf('curse.maven:patchouli-306770:7731017')
+    implementation fg.deobf('curse.maven:caelus-308989:5281700')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

@@ -61,3 +61,35 @@ mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "enigmaticlegacy"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "2.30.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "curios"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "5.14.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "caelus"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "3.2.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "patchouli"
+mandatory = true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "85,)"
+ordering = "NONE"
+side = "BOTH"
