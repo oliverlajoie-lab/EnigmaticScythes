@@ -24,6 +24,11 @@ public class ArachnidScythe extends SwordItem {
     }
 
     @Override
+    public int getEnchantmentValue() {
+        return 15;
+    }
+    
+    @Override
     public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> tooltip, TooltipFlag p_41424_) {
         tooltip.add(Component.translatable("item.enigmatic_scythes.arachnid_scythe.tooltip"));
 
